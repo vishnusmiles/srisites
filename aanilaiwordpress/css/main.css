@@ -6,8 +6,9 @@ Assigned to:  Bach Le
 Primary use:  
 -------------------------------------------------------------------*/
 
-.alert-validate:after {
-content: "\26A0"!important;}
+
+
+
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
@@ -15,76 +16,43 @@ content: "\26A0"!important;}
 .container {max-width: 1200px;}
 
 
-
 /*//////////////////////////////////////////////////////////////////
 [ Form ]*/
 .contact100-form {
-  width: 100%;
+  max-width: 100%;
 }
-
 /*------------------------------------------------------------------
 [ Input ]*/
 
 .wrap-input100 {
-  width: 25em;
-  max-width: calc(100% - 10px);
+  width: 500px;
+  max-width: 100%;
   position: relative;
-  background-color: #e6e6e6;
-  height: 3em;
-  border: 0px solid transparent;
-  border-radius: 5px;
+  background-color: transparent;
+  height: 80px;
 }
 
 /*---------------------------------------------*/
 .input100 {
   display: block;
   width: 100%;
-  background: transparent;
-}
-
-input.input100 {
   height: 100%;
-  padding: 0 20px 0 20px;
+  padding: 0 90px 0 35px;
+  background-color: #fff;
+
+  box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+  -o-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+  -ms-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
 }
 
-
-/*------------------------------------------------------------------
-[ Focus Input ]*/
-
-.focus-input100 {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  pointer-events: none;
-  border: 1px solid #0099d6;
-  border-radius: 5px;
-  visibility: hidden;
-  opacity: 0;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-
-  -webkit-transform: scaleX(1.1) scaleY(1.2);
-  -moz-transform: scaleX(1.1) scaleY(1.2);
-  -ms-transform: scaleX(1.1) scaleY(1.2);
-  -o-transform: scaleX(1.1) scaleY(1.2);
-  transform: scaleX(1.1) scaleY(1.2);
-}
-
-.input100:focus + .focus-input100 {
-  visibility: visible;
-  opacity: 1;
-
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+.input100:focus {
+  box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
+  -o-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -101,7 +69,7 @@ input.input100 {
   max-width: 70%;
   background-color: #fff;
   border: 1px solid #c80000;
-  border-radius: 2px;
+  border-radius: 0px;
   padding: 4px 25px 4px 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -109,12 +77,12 @@ input.input100 {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 12px;
+  right: 82px;
   pointer-events: none;
 
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;font-weight:700;
   color: #c80000;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.4;
   text-align: left;
 
@@ -140,7 +108,7 @@ input.input100 {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 18px;
+  right: 88px;
 }
 
 .alert-validate:hover:before {
@@ -156,6 +124,33 @@ input.input100 {
 }
 
 
+/*//////////////////////////////////////////////////////////////////
+[ Simple slide100 ]*/
+.simpleslide100-parent {
+  position: relative;
+  z-index: 1;
+}
+
+.simpleslide100 {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.simpleslide100-item {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
 
 /*==================================================================
     TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
@@ -164,61 +159,44 @@ input.input100 {
 /*==================================================================
 [ Color ]*/
 .cl0 {color: #fff;}
+.cl1 {color: #333;}
 
 
 
 
 /*//////////////////////////////////////////////////////////////////
 [ S-Text 0 - 15 ]*/
-.s1-txt1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  color: #fff;
-  line-height: 1;
-}
 
-.s1-txt2 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight:700;
+/*---------------------------------------------*/
+.s2-txt1 {
+  font-family: 'Quicksand', sans-serif;font-weight:700;
   font-size: 15px;
-  color: #000080;
-  line-height: 1.4;
+  color: #333;
+  line-height: 1.2;
 }
 
-.s1-txt3 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
-  color: #fff;
-  line-height: 1.4;
-}
-
-.s1-txt4 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  color: #999999;
-  line-height: 1.5;
-}
 
 
 /*//////////////////////////////////////////////////////////////////
 [ M-Text 16 - 25 ]*/
-.m1-txt1 {
-  font-family: 'Quicksand', sans-serif;font-weight:900;
-  font-size: 25px;
-  color: #000;
+
+/*---------------------------------------------*/
+.m2-txt1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: #999;
   line-height: 1.2;
 }
-
 
 
 
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .l1-txt1 {
-  font-family: 'Quicksand', sans-serif;font-weight:700;
-  font-size: 2.5em;
-  line-height: 1;
-  color: #fff;
+  font-family: PlayfairDisplay-BlackItalic;
+  font-size: 90px;
+  color: #333;
+  line-height: 1.1;
 }
 
 
@@ -234,35 +212,33 @@ input.input100 {
 
 .size2 {
   width: 90px;
-  height: 100px;
+  height: 80px;
 }
 
 .size3 {
-  min-width: 7em;
-  height: 3em;
+  width: 36px;
+  height: 36px;
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ Width ]*/
 .wsize1 {
-  max-width: 100%;
-  width: 880px;
+  width: 50%;
 }
 
-
+.wsize2 {
+  max-width: 100%;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ Height ]*/
-.hsize1 {
-  min-height: 230px;
-}
+
 
 
 
 /*//////////////////////////////////////////////////////////////////
 [ Background ]*/
 .bg0 {background-color: #fff;}
-.bg1 {background-color: rgba(255,255,255,1);}
 
 .bg-img1 {
   background-position: center;
@@ -275,22 +251,16 @@ input.input100 {
 
 /*//////////////////////////////////////////////////////////////////
 [ Border ]*/
-.bor1 {
-  border-radius: 18px;
-}
 
-.bor2 {
-  border-bottom: 1px solid #999999;
-}
+
 
 
 
 /*==================================================================
    WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE  
 ==================================================================*/
-.where1 {
-  margin: 20px 5px 0px 5px;
-}
+
+
 
 
 /*==================================================================
@@ -301,35 +271,57 @@ input.input100 {
 .placeholder0::-moz-placeholder { color: #999999;}
 .placeholder0:-ms-input-placeholder { color: #999999;}
 
+
+/*---------------------------------------------*/
+.overlay1 {
+  position: relative;
+  z-index: 1;
+}
+.overlay1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+
 /*---------------------------------------------*/
 .wrappic1 {
   display: block;
-  width: 100%;
-  text-align: center;
 }
+
 .wrappic1 img {
   max-width: 100%;
 }
 
 /*---------------------------------------------*/
-.how-countdown {
-  background-color: #333333;
-  border-radius: 10px;
-  margin: 0px 18px 25px 18px;
+.how-btn1 {
+  padding: 0 15px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.how-btn1:hover {
+  background-color: #555555;
+  color: #fff;
 }
 
 /*---------------------------------------------*/
-.how-btn {
-  padding: 0 20px;
-  background-color: #0099D6;
-  border-radius: 5px;
+.how-social {
+  color: #fff;
+  font-size: 22px;
+  background-color: #ccc;
+  border-radius: 50%;
 }
 
-.how-btn:hover {
-  background-color: #000080;
+.how-social:hover {
+  background-color: #333;
+  color: #fff;
 }
-
-
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -349,7 +341,13 @@ input.input100 {
 .hov-bg0:hover {background-color: #fff;}
 
 /*---------------------------------------------*/
-
+.hov1:hover i {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
 
 
 
@@ -383,6 +381,14 @@ input.input100 {
   .w-full-xl {width: 100%;}
 
   /*---------------------------------------------*/
+  .respon1 {
+    width: 60%;
+  }
+
+  /*---------------------------------------------*/
+  .respon2 {
+    width: 40%;
+  }
 
 }
 
@@ -390,6 +396,7 @@ input.input100 {
 /*//////////////////////////////////////////////////////////////////
 [ LG ]*/
 @media (max-width: 992px) {
+  .dis-none-lg {display: none;}
   .m-0-lg {margin: 0;}
   .m-lr-0-lg {margin-left: 0; margin-right: 0;}
   .m-lr-15-lg {margin-left: 15px; margin-right: 15px;}
@@ -409,6 +416,17 @@ input.input100 {
   .w-full-lg {width: 100%;}
 
   /*---------------------------------------------*/
+  .respon1 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*---------------------------------------------*/
+  .respon2 {
+    width: 100%;
+    height: 500px;
+  }
 
 
 }
@@ -442,6 +460,7 @@ input.input100 {
 /*//////////////////////////////////////////////////////////////////
 [ SM ]*/
 @media (max-width: 576px) {
+  .dis-none-sm {display: none;}
   .m-0-sm {margin: 0;}
   .m-lr-0-sm {margin-left: 0; margin-right: 0;}
   .m-lr-15-sm {margin-left: 15px; margin-right: 15px;}
@@ -461,9 +480,10 @@ input.input100 {
   .w-full-sm {width: 100%;}
 
   /*---------------------------------------------*/
-  .respon1 {
-    padding-top: 80px;
+  .respon3 {
+    font-size: 60px;
   }
+
   
 }
 
