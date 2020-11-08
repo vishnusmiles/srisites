@@ -7,8 +7,8 @@ Primary use:
 -------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand');
 
-.alert-validate::after {
-content: "\26A0";}
+.alert-validate:after {
+content: "\26A0"!important;}
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
