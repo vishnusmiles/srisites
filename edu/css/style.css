@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.75;
 }
 
 h1, .h1 {
@@ -10112,8 +10112,8 @@ footer a:hover {
 }
 
 .btn-opacity-light {
-  color: #fc7341;
-  background-color: #fec4af;
+  color: #fff;
+  background-color: #fc7341;
   border: 2px solid transparent;
   transition: all 0.5s ease-in-out;
 }
